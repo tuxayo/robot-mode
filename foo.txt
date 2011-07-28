@@ -27,3 +27,7 @@ fuzz '${infix}' buzz
      dimsum  ${infix} 
 
 #comment here also
+
+# Local variables:
+# mode: robot
+# End:

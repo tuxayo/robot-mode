@@ -65,3 +65,6 @@ a robot kw
 a robot kw found next
     comment  press continue tags finding to get here after finding 'a robot kw'
 
+# Local variables:
+# mode: robot
+# End:

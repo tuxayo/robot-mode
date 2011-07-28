@@ -236,7 +236,7 @@ This function is bound to \\[robot-mode-indent].
 )
 
 (define-derived-mode robot-mode fundamental-mode
-  "robot mode"
+  "robot"
   "Major mode for editing Robot Framework text files.
 
 This mode rebinds the following keys to new function:

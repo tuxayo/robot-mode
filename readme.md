@@ -11,10 +11,18 @@ Features
 
 Installation
 ============
-Dowload the robot-mode.el. The contents of that file will be updated without much ceremony so check the sha1sum if you are interested to see if there is any changes.
+Download the robot-mode.el. The contents of that file will be updated without much ceremony so check the sha1sum if you are interested to see if there is any changes.
 
 See the top of robot-mode.el for instructions on how to get emacs to automatically change to robot mode when opening .txt files. After changing to robot-mode in emacs press C-h m to see the usage instructions for the mode.
 
+Alternatively you can add an autoload statement like in the .emacs available in the same directory and add the following comments at the end of your robot files:
+
+# Local variables:
+# mode: robot
+# End:
+
+This will allow to load robot mode only on robot files and to let the normal text mode on the other .txt files.
+
 Tags
 ====	
-Normal etags TAGS file works. To help you out you can use the tag.sh shell script to produce the TAGS file. The mode rebinds whatever is bound to find-tag normally (usually M-.) to the robot keyword search. This also means that continuing finding other matching kws happend by giving the prefix argument (i.e. usually by C-u M-.).
+Normal etags TAGS file works. To help you out you can use the tag.sh shell script to produce the TAGS file. The mode rebinds whatever is bound to find-tag normally (usually M-.) to the robot keyword search. This also means that continuing finding other matching kws happens by giving the prefix argument (i.e. usually by C-u M-.).

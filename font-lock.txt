@@ -45,3 +45,7 @@ font lock for formal arguments in keywords
 
 font lock for formal infix '${scalar}' and '@{list}' arguments in keywords
     #no contents
+
+# Local variables:
+# mode: robot
+# End:
