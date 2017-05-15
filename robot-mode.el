@@ -1,7 +1,26 @@
-;; Robot mode
-;; ==========
-;;
-;; A major mode for editing robot framework text files.
+;;; robot-mode.el ---                                -*- lexical-binding: t; -*-
+
+;; Copyright (c) 2012 Sakari Jokinen
+
+;; Author: Sakari Jokinen
+;; Description: A major mode for editing robot framework text files.
+
+;; This file is not part of Emacs.
+
+;; This program is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation, either version 3 of the License, or
+;; (at your option) any later version.
+
+;; This program is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+;;; Commentary:
 ;; Add the following to your .emacs file
 ;;
 ;;    (load-file "path/to/robot-mode.el")
@@ -12,20 +31,9 @@
 ;; the robot-mode on for that buffer. This will also be done automatically when
 ;; you start emacs.
 ;;
-;;     This program is free software: you can redistribute it and/or modify
-;;     it under the terms of the GNU General Public License as published by
-;;     the Free Software Foundation, either version 3 of the License, or
-;;     (at your option) any later version.
-
-;;     This program is distributed in the hope that it will be useful,
-;;     but WITHOUT ANY WARRANTY; without even the implied warranty of
-;;     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-;;     GNU General Public License for more details.
-
-;;     You should have received a copy of the GNU General Public License
-;;     along with this program.  If not, see <http://www.gnu.org/licenses/>.
-;;
 ;; You can participate by sending pull requests to https://github.com/sakari/robot-mode
+
+;;; Code:
 
 (setq robot-mode-keywords
       '(
@@ -278,4 +286,4 @@ c-basic-offset defines the amount of spaces that are inserted when indenting.
   (define-key robot-mode-map [remap complete-symbol] 'robot-mode-complete)
   (define-key robot-mode-map [remap indent-region] 'robot-mode-indent-region)
   )
-   
+
