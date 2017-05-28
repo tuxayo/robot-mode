@@ -33,6 +33,9 @@
 ;;
 ;; You can participate by sending pull requests to https://github.com/sakari/robot-mode
 
+;;;###autoload
+(define-derived-mode robot-mode)
+
 ;;; Code:
 
 (setq robot-mode-keywords
